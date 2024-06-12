@@ -1,9 +1,10 @@
 import { defineConfig } from 'vitepress'
 import { set_sidebar } from './utils/auto_sidebar.js'
 export default defineConfig({
+  base:'/vt/',
   title: "关于收集插件的用法",
   description: "A VitePress Site",
-  head: [["link", { rel: "icon", href: "/logo.svg" }]],
+  head: [["link", { rel: "icon", href: "/vt/logo.svg" }]],
   themeConfig: {
     logo: '/logo.svg',
     outlineTitle: '目录',
