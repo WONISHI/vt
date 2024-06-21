@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { set_sidebar } from './utils/auto_sidebar.js'
 export default defineConfig({
-  base:'/vt/',
+  base: '/vt/',
   title: "关于收集插件的用法",
   description: "A VitePress Site",
   head: [["link", { rel: "icon", href: "/vt/logo.svg" }]],
@@ -17,13 +17,15 @@ export default defineConfig({
       },
       {
         text: '示例', items: [
-          { text: 'pdfjs', link: '/toolsfunction/pdfjs/' }
+          { text: 'pdfjs', link: '/src/pdfjs/' },
+          { text: 'qiankun', link: '/src/qiankun/qiankun教程.md' }
         ]
       }
     ],
 
     sidebar: {
-      "/toolsfunction/pdfjs": set_sidebar("/toolsfunction/pdfjs")
+      "/toolsfunction/pdfjs": set_sidebar("/src/pdfjs"),
+      "/src/qiankun":set_sidebar("/src/qiankun")
     },
 
     socialLinks: [
