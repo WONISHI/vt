@@ -1,38 +1,39 @@
-import { defineConfig } from 'vitepress'
-import { set_sidebar } from './utils/auto_sidebar.js'
+import { defineConfig } from "vitepress";
+import { set_sidebar } from "./utils/auto_sidebar.js";
 export default defineConfig({
-  base: '/vt/',
+  base: "/vt/",
   title: "关于收集插件的用法",
   description: "A VitePress Site",
   head: [["link", { rel: "icon", href: "/vt/logo.svg" }]],
   themeConfig: {
-    logo: '/logo.svg',
-    outlineTitle: '目录',
+    logo: "/logo.svg",
+    outlineTitle: "目录",
     outline: [1, 6],
     nav: [
       {
-        text: '首页', items: [
-          { text: '尚医通', link: 'http://8.134.184.87' }
-        ]
+        text: "首页",
+        items: [{ text: "尚医通", link: "http://8.134.184.87" }],
       },
       {
-        text: '示例', items: [
-          { text: 'pdfjs', link: '/src/pdfjs/' },
-          { text: 'qiankun', link: '/src/qiankun/qiankun教程.md' }
-        ]
-      }
+        text: "示例",
+        items: [
+          { text: "pdfjs", link: "/src/pdfjs/" },
+          { text: "qiankun", link: "/src/qiankun/qiankun教程.md" },
+          { text: "utilify", link: "/src/utilfy/index.md" },
+        ],
+      },
     ],
 
     sidebar: {
       "/toolsfunction/pdfjs": set_sidebar("/src/pdfjs"),
-      "/src/qiankun":set_sidebar("/src/qiankun")
+      "/src/qiankun": set_sidebar("/src/qiankun"),
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
     footer: {
-      copyright: 'Copyright @2024 Author WEI'
+      copyright: "Copyright @2024 Author WEI",
     },
     // 设置搜索框的样式
     search: {
@@ -54,5 +55,5 @@ export default defineConfig({
         },
       },
     },
-  }
-})
+  },
+});

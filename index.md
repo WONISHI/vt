@@ -16,6 +16,9 @@ hero:
     - theme: alt
       text: threejs
       link: /api-examples
+    - theme: alt
+      text: utilify通用工具函数
+      link: /src/utilfy/index.md
 
 features:
   - title: Feature A
