@@ -13,10 +13,17 @@ export default defineConfig({
   lastUpdatedText: true,
   themeConfig: {
     logo: "/logo.svg",
-    outlineTitle: "目录",
+    outline: { label: "目录", level: [2, 6] },
     // aside: 'left',
-    returnToTopLabel:'返回顶部', 
-    outline: [1, 6],
+    // 主题
+    darkModeSwitchLabel: "深浅模式",
+    // 返回顶部label
+    returnToTopLabel: "返回顶部",
+    //自定义上下页名
+    docFooter: {
+      prev: "上一页",
+      next: "下一页",
+    },
     nav: [
       {
         text: "首页",
@@ -25,16 +32,17 @@ export default defineConfig({
       {
         text: "示例",
         items: [
-          { text: "pdfjs", link: "/src/pdfjs/" },
+          { text: "pdfjs", link: "/src/pdfjs/第一章关于pdfjs.md" },
           { text: "qiankun", link: "/src/qiankun/qiankun教程.md" },
-          { text: "utilify", link: "/src/utilfy/index.md" },
+          { text: "utilify", link: "/src/utilfy/说明文档.md" },
+          { text: "vue源码", link: "/src/vue源码/rollup配置.md" },
         ],
       },
     ],
 
     sidebar: {
-      "/toolsfunction/pdfjs": set_sidebar("/src/pdfjs"),
       "/src/qiankun": set_sidebar("/src/qiankun"),
+      "/src/vue源码":set_sidebar("/src/vue源码")
     },
 
     socialLinks: [
