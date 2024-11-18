@@ -5,9 +5,17 @@ export default defineConfig({
   title: "关于收集插件的用法",
   description: "A VitePress Site",
   head: [["link", { rel: "icon", href: "/vt/logo.svg" }]],
+  ignoreDeadLinks: true,
+  markdown: {
+    // 是否在代码块中启用行号
+    lineNumbers: true,
+  },
+  lastUpdatedText: true,
   themeConfig: {
     logo: "/logo.svg",
     outlineTitle: "目录",
+    // aside: 'left',
+    returnToTopLabel:'返回顶部', 
     outline: [1, 6],
     nav: [
       {

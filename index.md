@@ -12,13 +12,13 @@ hero:
   actions:
     - theme: brand
       text: pdfjs
-      link: /markdown-examples
+      link: /src/pdfjs/第一章关于pdfjs.md
     - theme: alt
       text: threejs
       link: /api-examples
     - theme: alt
       text: utilify通用工具函数
-      link: /src/utilfy/index.md
+      link: /src/utilfy/说明文档.md
 
 features:
   - title: Feature A
